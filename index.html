@@ -168,7 +168,6 @@
           <p class="t-desc">
             Formation universitaire technologique centrée sur les infrastructures réseau, les protocoles
             de routage &amp; commutation, les systèmes embarqués et les télécommunications.
-           
           </p>
           <br>
           <span class="badge badge-blue">En cours</span>
@@ -260,7 +259,7 @@
           <div class="tag-list">
             <span class="tag">ESP32</span>
             <span class="tag">Arduino</span>
-            <span class="tag">C  </span>
+            <span class="tag">C</span>
             <span class="tag">I2C</span>
             <span class="tag">SPI</span>
             <span class="tag">WiFi</span>
@@ -364,7 +363,6 @@
           </div>
         </div>
 
-
         <!-- Projet 3 : Infrastructure EVE-NG -->
         <div class="project-card anim">
           <div class="project-head">
@@ -383,6 +381,13 @@
             routage inter-VLAN, <strong>DHCP relay</strong> et <strong>VTP</strong>.
             Tests de connectivité complets et analyse méthodique des erreurs.
           </p>
+          <p class="project-desc">
+            La topologie comprend deux switches (switch-client et Switch-server), un routeur central,
+            trois VPCs (Admi, Dire, Util) et un serveur SRV. J'ai configuré les trunks inter-switches,
+            les VLANs par département, le routage inter-VLAN sur le routeur et le DHCP relay pour
+            centraliser l'attribution des adresses IP. Validation finale par tests ping entre VLANs.
+          </p>
+          <p class="project-note">Détails du projet : <a href="#" class="btn btn-outline open-pdf-modal" data-pdf="Projet_EVE_NG.pdf" data-title="Topologie EVE-NG" data-expl="&lt;p&gt;&lt;strong&gt;Contexte &amp; objectif :&lt;/strong&gt; Déploiement d'une infrastructure réseau d'entreprise sous EVE-NG simulant une segmentation par département avec accès centralisé au serveur.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Topologie :&lt;/strong&gt; Deux switches Cisco interconnectés (switch-client et Switch-server), un routeur central (e0/0), trois postes clients (VPC-Admi, VPC-Dire, VPC-Util) et un serveur SRV. Chaque VPC est rattaché à un VLAN distinct correspondant à son département.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Travail réalisé :&lt;/strong&gt; Configuration des VLANs et des ports d'accès sur les switches, mise en place des liens trunk 802.1Q entre switches et vers le routeur, activation du VTP pour la propagation des VLANs, configuration du routage inter-VLAN (router-on-a-stick) et du DHCP relay pour l'attribution dynamique des adresses IP depuis le serveur SRV.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Résultats :&lt;/strong&gt; Connectivité inter-VLAN validée par tests ping, isolation des segments confirmée, et accès au serveur SRV opérationnel depuis tous les VPCs.&lt;/p&gt;">Voir la topologie</a></p>
           <div class="tech-row">
             <span class="tech-chip">EVE-NG</span>
             <span class="tech-chip">Cisco IOS</span>
@@ -484,7 +489,6 @@
           </div>
         </div>
 
-
       </div>
     </div>
   </section>
@@ -571,7 +575,6 @@
           </a>
 
           <a href="https://github.com/furkan32-ai" class="contact-item" target="_blank" rel="noopener noreferrer">
-            <!-- Remplace https://github.com/furkan32-ai par ton URL GitHub -->
             <svg viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
             </svg>
@@ -579,7 +582,6 @@
           </a>
 
           <a href="https://www.linkedin.com/in/furkan-ozdemir-9b75423b5/" class="contact-item" target="_blank" rel="noopener noreferrer">
-            <!-- Remplace https://www.linkedin.com/in/furkan-ozdemir-9b75423b5/ par ton URL LinkedIn -->
             <svg viewBox="0 0 24 24" fill="currentColor">
               <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
             </svg>
@@ -597,66 +599,63 @@
     <p style="margin-top:.3rem">© 2025 · Hébergé sur <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a></p>
   </footer>
 
-    <!-- Modal générique pour afficher un PDF et une explication -->
-    <div id="pdf-modal" class="modal" aria-hidden="true">
-      <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="pdf-modal-title">
-        <button class="modal-close" id="pdf-modal-close" aria-label="Fermer la fenêtre">×</button>
-        <h3 id="pdf-modal-title">Document</h3>
-        <div class="modal-body">
-          <div id="pdf-modal-expl" style="color:var(--muted);line-height:1.6;margin-bottom:0.75rem;"></div>
-          <div class="modal-iframe-wrap">
-            <iframe id="pdf-modal-iframe" src="" title="Document" frameborder="0"></iframe>
-          </div>
-          <p style="margin-top:.5rem">Télécharger/ouvrir le document complet : <a id="pdf-modal-download" href="#" target="_blank" rel="noopener" class="btn btn-outline">Ouvrir le document</a></p>
+  <!-- Modal générique pour afficher un PDF et une explication -->
+  <div id="pdf-modal" class="modal" aria-hidden="true">
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="pdf-modal-title">
+      <button class="modal-close" id="pdf-modal-close" aria-label="Fermer la fenêtre">×</button>
+      <h3 id="pdf-modal-title">Document</h3>
+      <div class="modal-body">
+        <div id="pdf-modal-expl" style="color:var(--muted);line-height:1.6;margin-bottom:0.75rem;"></div>
+        <div class="modal-iframe-wrap">
+          <iframe id="pdf-modal-iframe" src="" title="Document" frameborder="0"></iframe>
         </div>
+        <p style="margin-top:.5rem">Télécharger/ouvrir le document complet : <a id="pdf-modal-download" href="#" target="_blank" rel="noopener" class="btn btn-outline">Ouvrir le document</a></p>
       </div>
     </div>
+  </div>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function(){
-        var modal = document.getElementById('pdf-modal');
-        var iframe = document.getElementById('pdf-modal-iframe');
-        var titleEl = document.getElementById('pdf-modal-title');
-          var explEl = document.getElementById('pdf-modal-expl');
-        var downloadLink = document.getElementById('pdf-modal-download');
-        var closeBtn = document.getElementById('pdf-modal-close');
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      var modal = document.getElementById('pdf-modal');
+      var iframe = document.getElementById('pdf-modal-iframe');
+      var titleEl = document.getElementById('pdf-modal-title');
+      var explEl = document.getElementById('pdf-modal-expl');
+      var downloadLink = document.getElementById('pdf-modal-download');
+      var closeBtn = document.getElementById('pdf-modal-close');
 
-        function openPdfModal(pdf, title, expl){
-          titleEl.textContent = title || 'Document';
-          // allow HTML in the explanation (data-expl contains escaped HTML)
-          explEl.innerHTML = expl || '';
-          // set iframe and download link (use encoded URI for safety)
-          iframe.src = encodeURI(pdf);
-          downloadLink.href = encodeURI(pdf);
-          modal.setAttribute('aria-hidden','false');
-          modal.classList.add('open');
-          document.body.style.overflow = 'hidden';
-        }
+      function openPdfModal(pdf, title, expl){
+        titleEl.textContent = title || 'Document';
+        explEl.innerHTML = expl || '';
+        iframe.src = encodeURI(pdf);
+        downloadLink.href = encodeURI(pdf);
+        modal.setAttribute('aria-hidden','false');
+        modal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
 
-        function closeModal(){
-          modal.setAttribute('aria-hidden','true');
-          modal.classList.remove('open');
-          iframe.src = '';
-          document.body.style.overflow = '';
-        }
+      function closeModal(){
+        modal.setAttribute('aria-hidden','true');
+        modal.classList.remove('open');
+        iframe.src = '';
+        document.body.style.overflow = '';
+      }
 
-        // attach to all triggers
-        var triggers = document.querySelectorAll('.open-pdf-modal');
-        triggers.forEach(function(el){
-          el.addEventListener('click', function(e){
-            e.preventDefault();
-            var pdf = el.getAttribute('data-pdf');
-            var title = el.getAttribute('data-title') || el.textContent.trim();
-            var expl = el.getAttribute('data-expl') || '';
-            if(pdf) openPdfModal(pdf, title, expl);
-            else window.open('#','_blank');
-          });
+      var triggers = document.querySelectorAll('.open-pdf-modal');
+      triggers.forEach(function(el){
+        el.addEventListener('click', function(e){
+          e.preventDefault();
+          var pdf = el.getAttribute('data-pdf');
+          var title = el.getAttribute('data-title') || el.textContent.trim();
+          var expl = el.getAttribute('data-expl') || '';
+          if(pdf) openPdfModal(pdf, title, expl);
+          else window.open('#','_blank');
         });
-
-        if(closeBtn) closeBtn.addEventListener('click', closeModal);
-        if(modal) modal.addEventListener('click', function(e){ if(e.target === modal) closeModal(); });
-        document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && modal.classList.contains('open')) closeModal(); });
       });
-    </script>
+
+      if(closeBtn) closeBtn.addEventListener('click', closeModal);
+      if(modal) modal.addEventListener('click', function(e){ if(e.target === modal) closeModal(); });
+      document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && modal.classList.contains('open')) closeModal(); });
+    });
+  </script>
 </body>
 </html>
