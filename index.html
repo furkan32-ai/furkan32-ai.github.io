@@ -224,6 +224,10 @@
             <span class="tag">Wireshark</span>
             <span class="tag">Packet Tracer</span>
             <span class="tag">Subnetting IPv4</span>
+            <span class="tag">DHCP</span>
+            <span class="tag">NAT / ACL</span>
+            <span class="tag">Port Security</span>
+            <span class="tag">Port Mirroring</span>
           </div>
         </div>
 
@@ -282,6 +286,30 @@
           </div>
         </div>
 
+        <div class="skill-card anim anim-delay-4">
+          <div class="skill-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <ellipse cx="12" cy="5" rx="9" ry="3"/>
+              <path d="M3 5v14a9 3 0 0 0 18 0V5"/>
+              <path d="M3 12a9 3 0 0 0 18 0"/>
+            </svg>
+          </div>
+          <div class="skill-card-title">Serveurs & Services</div>
+          <div class="tag-list">
+            <span class="tag">DNS (Bind9)</span>
+            <span class="tag">Active Directory</span>
+            <span class="tag">Samba</span>
+            <span class="tag">Apache2 / Nginx</span>
+            <span class="tag">FTP (vsftpd)</span>
+            <span class="tag">iptables / NAT</span>
+            <span class="tag">Syslog / NTP</span>
+            <span class="tag">SIP / Téléphonie IP</span>
+            <span class="tag">MQTT</span>
+            <span class="tag">Django</span>
+            <span class="tag">MariaDB / MySQL</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -296,6 +324,70 @@
       </div>
 
       <div class="projects-grid">
+
+        <!-- Projet 0 : SAE2.04 - Projet Intégratif -->
+        <div class="project-card anim">
+          <div class="project-head">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                <path d="M8 21h8"/>
+                <path d="M12 17v4"/>
+                <path d="M6 8h4"/>
+                <path d="M6 11h7"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="project-title">SAE2.04 — Projet Intégratif Réseau, Téléphonie, IoT &amp; Web</h3>
+          <p class="project-desc">
+            Projet intégratif de fin de première année, regroupant l'ensemble des compétences du
+            semestre sur du matériel physique réel (routeur, commutateur, serveur, téléphones IP) :
+            infrastructure réseau d'entreprise, téléphonie sur IP, collecte de données capteurs par
+            <strong>MQTT</strong> et présentation web des données sous <strong>Django</strong>.
+            Réalisé en groupe, avec deux évaluations orales individuelles sur l'ensemble des parties
+            (chacun devant être capable de refaire seul le projet).
+          </p>
+          <p class="project-desc">
+            <strong>Partie Réseau :</strong> segmentation en 4 VLANs (Voix, Users, Serveur, Admin),
+            routage inter-VLAN et service <strong>DHCP</strong> sur le routeur, filtrage entre VLANs
+            (blocage Users → Admin, autorisé dans l'autre sens), protection du commutateur contre les
+            boucles avec blocage des ports en cas de trafic BPDU suspect, mise en place de deux sessions
+            de <strong>port mirroring</strong> pour le débogage, <strong>NAT</strong> à la volée basé sur
+            une ACL et <strong>forwarder DNS</strong> vers le résolveur de l'établissement. Déploiement
+            d'un serveur <strong>Debian</strong> en adressage statique avec <strong>Apache2, FTP
+            (vsftpd)</strong> et centralisation des logs du routeur en <strong>syslog</strong>,
+            synchronisation d'horloge par <strong>NTP</strong>, le tout sécurisé par des règles
+            <strong>iptables</strong> strictes (services autorisés uniquement, ping sortant seul
+            autorisé).
+          </p>
+          <p class="project-desc">
+            <strong>Partie Téléphonie :</strong> mise en place d'un proxy <strong>SIP</strong>
+            (sip.linphone.org), de deux softphones sur le VLAN Users avec listes de contacts
+            paramétrées et d'un téléphone SIP matériel sur le VLAN Voix avec touches rapides.
+          </p>
+          <p class="project-desc">
+            <strong>Partie Collecte &amp; Web :</strong> script <strong>Python</strong> de réception
+            des trames capteurs en <strong>MQTT</strong> (broker test.mosquitto.org), stockage en base
+            <strong>MySQL</strong> (deux tables reliées par clé étrangère, nom et ID uniques) et
+            présentation des données sous <strong>Django</strong> (Apache/Gunicorn) : tableau filtrable
+            par capteur et par période, cumul des filtres, affichage graphique, export CSV,
+            température moyenne par capteur et modification du nom/emplacement du capteur.
+          </p>
+          <div class="tech-row">
+            <span class="tech-chip">VLANs</span>
+            <span class="tech-chip">DHCP</span>
+            <span class="tech-chip">NAT / ACL</span>
+            <span class="tech-chip">iptables</span>
+            <span class="tech-chip">DNS</span>
+            <span class="tech-chip">Cisco IOS</span>
+            <span class="tech-chip">SIP / VoIP</span>
+            <span class="tech-chip">MQTT</span>
+            <span class="tech-chip">Python</span>
+            <span class="tech-chip">Django</span>
+            <span class="tech-chip">MySQL</span>
+            <span class="tech-chip">Debian</span>
+          </div>
+        </div>
 
         <!-- Projet 1 : Web Radio ESP32 -->
         <div class="project-card anim">
